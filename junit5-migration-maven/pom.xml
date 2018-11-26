@@ -6,17 +6,21 @@
 	<groupId>com.example</groupId>
 	<artifactId>junit5-migration-maven</artifactId>
 	<version>1.0-SNAPSHOT</version>
-	<packaging>jar</packaging>
+	<packaging>war</packaging>
 
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 		<maven.compiler.source>1.8</maven.compiler.source>
 		<maven.compiler.target>${maven.compiler.source}</maven.compiler.target>
-
+		
+		<annotatedJdk>${org.checkerframework:jdk8:jar}</annotatedJdk>
+	  	<failOnMissingWebXml>false</failOnMissingWebXml>   
+		
 		<junit.version>4.12</junit.version>
 		<junit.jupiter.version>5.3.1</junit.jupiter.version>
 		<junit.vintage.version>5.3.1</junit.vintage.version>
 		<junit.platform.version>1.3.1</junit.platform.version>
+		
 	</properties>
 
 	<dependencies>
